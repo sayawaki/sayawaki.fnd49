@@ -1,0 +1,218 @@
+/* 背景とか全体 */
+body {
+  background-image: url(ticket.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: black;
+}
+
+/* DIG FND49 FINAL PROJECT */
+#head-p {
+  margin: 0;
+  color:#f52cc0;
+  text-align: center;
+}
+
+/* LIVE TICKET SIMULATOR */
+#title{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+}
+
+/* ～運試しと会場を選択しテキスト */
+.middle-p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: white;
+  text-align: center;
+}
+
+/* 会場ボタン */ 
+.place-buttons{ 
+  display:flex;
+  gap:20px;
+  margin-top:50px;
+}
+
+/* 会場ボタンを横幅いっぱい */
+.place-card{
+  width: 100%;
+}
+
+/* 会場ボタンの中身の見た目を整える */
+.stadium {
+  color: black;
+  background-color: #FFF;
+  text-align: center;
+  opacity: 0.9;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 20px;
+  margin: 10px;
+}
+
+/* カーソルを合わせた時に上に動かす */
+.place-card:hover{
+  transform:translateY(-5px);
+}
+
+/* ラジオボタンのチェックを隠す */
+.place-card input {
+  display: none;
+}
+
+/* 選択したものを光らせる */
+.place-card input[type="radio"]:checked + .stadium {
+  box-shadow: 0 0 20px yellow;
+} 
+
+/* この会場に入場するボタン */
+#enter-btn {
+  color: white;
+  background-color: #e55ddc;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  width: 300px;
+  padding: 10px;
+  margin: 40px auto;
+  display: flex;
+  opacity: 0.9;
+  font-size: 20px;
+  cursor: pointer;
+} 
+
+/* 背景画像出典 */
+footer,a {
+  color: white;
+  font-size: 10px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+}
+
+
+
+
+/* ticket.html */
+/* 前ページボタン */
+button {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* 入場受付中 */
+.enter-p {
+  background-color: #69d417;
+  color: white;
+  border-radius: 999px;
+  text-align: center;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/* ライブ名 */
+#live-name {
+  font-size: 30px;
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+
+/* スタジアム名 */
+#stadium-name {
+  font-size: 30px;
+  margin: 0px;
+}
+
+#date {
+  margin: 10px;
+}
+
+/* QRコードをかざす */
+#scan-btn {
+  color: white;
+  background-color: #e55ddc;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+  width: 300px;
+  padding: 10px;
+  margin: 30px auto;
+  display: flex;
+  opacity: 0.9;
+  font-size: 20px;
+  cursor: pointer;
+
+} 
+
+/* チケット情報をまとめている白い枠 seat.htmlも*/
+.area{
+  background-color: white;
+  opacity: 0.8;
+  text-align: center;
+  width: 600px;
+  border-radius:30px;
+  margin: 30px auto;
+  border:1px solid;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* スキャン中です */
+#scan-message{
+  font-weight: bold;
+  margin: auto;
+  margin-top: 10px;
+  color: red;
+  animation: scan 0.5s ease-in-out infinite alternate;
+}
+
+/* 点滅アニメーション */
+@keyframes scan {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+/* seat.html */
+/* あなたの座席はこちら */
+#your-seat {
+  color: black;
+  font-size: 35px;
+  margin-top: 20px;
+}
+
+/* 実際の座席 */
+#today-seat {
+  color: black;
+  font-size: 50px;
+  white-space: pre-wrap;
+  padding: 10px;
+  bottom: 10px;
+  margin: 20px;
+}
+
+/* 座席のコメント */
+#today-comment {
+  color: black;
+  font-size: 20px;
+  white-space: pre-wrap;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+
+
+
